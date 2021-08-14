@@ -175,8 +175,8 @@ def np():
         else:
             while(memory_occ>memory_buffer):
                 temp=li[0]
-                src=r'D:/Projects/OS'+temp
-                dest = r'D:/Projects/OS' + temp
+                src=r'D:/Projects/OS/'+temp
+                dest = r'D:/Projects/OS/Dump_Files/' + temp
                 desti=shutil.copy(src,dest)
                 os.remove(li[0])
                 memory_occ-=lenlist[0]
